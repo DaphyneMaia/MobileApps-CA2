@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_margin="10dp"
+        android:layout_width="400dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10sp">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/movieTitle"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/yellow"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/movieClass"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="class"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/starring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:justificationMode="inter_word"
+            android:text="Starring:"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/running_time_mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:text="Running_time"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/movieDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:justificationMode="inter_word"
+            android:text="Sinopse aahjadahkjdahda dfjkfdfhjfdhjf jhsdsajkhdajhsds jhkdajsdhajkdhajkdhajkdhakj jashdjaskdhajkdhakj"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/subButton"
+                android:layout_width="41dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:drawableBottom="@drawable/baseline_remove_circle_outline_24"
+                android:drawableTint="@color/yellow"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/selectSeats"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="SelectSeats"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:drawableBottom="@drawable/baseline_add_circle_outline_24"
+                android:drawableTint="@color/yellow"
+                tools:ignore="UseAppTint" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
