@@ -7,6 +7,7 @@ import java.util.Locale
 
 data class MoviesCatalog(
 
+    var id: Int,
     var movieTitle: String,
     var movieImage: String,
     var movieClass: String,

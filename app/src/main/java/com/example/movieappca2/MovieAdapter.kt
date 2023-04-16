@@ -1,6 +1,8 @@
 package com.example.movieappca2
 
 import android.annotation.SuppressLint
+import android.app.Activity
+import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.view.LayoutInflater
@@ -16,7 +18,7 @@ import java.util.Date
 import java.util.Locale
 import java.util.Random
 
-class MovieAdapter(private val moviesCatalog: Array<MoviesCatalog>, private val onClick: (MoviesCatalog) -> Unit): RecyclerView.Adapter<MovieAdapter.MovieViewHolder>()  {
+class MovieAdapter(private var moviesCatalog: Array<MoviesCatalog>, private val onClick: (MoviesCatalog) -> Unit): RecyclerView.Adapter<MovieAdapter.MovieViewHolder>()  {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.recycler_view, parent, false)

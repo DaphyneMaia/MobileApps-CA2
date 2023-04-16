@@ -3,22 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:gravity="center_vertical"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:background="@color/black"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/image"
         android:layout_margin="10dp"
-        android:layout_width="400dp"
-        android:layout_height="320dp"
-        android:layout_gravity="center"/>
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="320dp" />
 
     <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="vertical"
         android:padding="5dp">
 
@@ -35,9 +34,10 @@
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:text="title"
+                android:fontFamily="Roboto Condensed"
                 android:layout_marginEnd="20dp"
                 android:textColor="@color/yellow"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/movieClass"
@@ -59,7 +59,7 @@
             android:justificationMode="inter_word"
             android:text="Starring:"
             android:textColor="@color/white"
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
 
         <TextView
             android:id="@+id/running_time_mins"
@@ -67,20 +67,22 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_mono"
             android:justificationMode="inter_word"
             android:text="Running_time"
             android:textColor="@color/white"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/movieDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:fontFamily="Roboto Condensed"
             android:justificationMode="inter_word"
             android:text="Sinopse aahjadahkjdahda dfjkfdfhjfdhjf jhsdsajkhdajhsds jhkdajsdhajkdhajkdhajkdhakj jashdjaskdhajkdhakj"
             android:textColor="@color/white"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -119,6 +121,15 @@
                 tools:ignore="UseAppTint" />
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/baseline_arrow_back_24"
+            android:layout_gravity="center"
+            android:drawableTint="@color/yellow"
+            android:backgroundTint="@color/black"/>
 
     </LinearLayout>
 
