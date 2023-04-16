@@ -19,15 +19,9 @@ Requirement Checklist
 - [x] 2.3. On click plus/minus, update both seats_selected and seats_remaining for that movie
 - [x] 2.4. Add validation, when 0 seats selected minus is disabled, when 0 seats remaining plus is disabled
  2.5. When back is pressed, the selected seats are retained and reflected in the recycler view. (Hint: If you don’t see any updates, call adapter notifyItemChanged as soon as you return to the recycler view activity)
- 3. Bonus:
-- [ ] 3.1. Add "filling fast" badge if less than 3 seats remaining
-- [ ] 3.2. Use "Roboto Condensed" font to replicate same style
-- [ ] 3.3. Use original movie images from myvue.com or your favourite provider (Hint: check get_movie_image_url.gif (provided on Moodle))
-Additional Features implemented
-This is an optional section, feel free to remove this.
 
 Report
-- [ ] A short report (300-1000 words) describing the challenges you faced, failed attempts and workarounds used, any helper or alternative libraries you have used, and what you have learned in the process.
+- [x] A short report (300-1000 words) describing the challenges you faced, failed attempts and workarounds used, any helper or alternative libraries you have used, and what you have learned in the process.
 
 To begin with, I have never faced such a difficult task before. Dispate off the layout everything else ended up with error. Buttons, recyclerView, JSON file, HTTP request, some things I have just giving up of doing such as downloading JSON file from the internet or update the remaining seats when pressing the back arrow.
 I am very proud of my progress, because personally speaking kotlyn is a complete new language what makes it even more challenge when we are barelly learning java. Kotlin is more direct and has short commands, exactly what makes it harder than java to understand the syntax.
